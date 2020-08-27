@@ -4,4 +4,19 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+<<<<<<< Updated upstream
 @import './example';
+=======
+
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './components/button';
+
+@import './utils/breakpoints';
+@import './utils/mixines';
+@import './utils/normalize';
+
+@import './layout/body';
+@import './layout/body';
+@import './layout/container';
+>>>>>>> Stashed changes
