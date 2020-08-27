@@ -4,4 +4,15 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+@import './utils/normalize';
+@import './utils/vars';
+@import './utils/breakpoints';
+@import './utils/mixines';
+@import './utils/visually-hidden';
+@import './layout/body';
+@import './layout/container';
+@import './_components/button';
+@import './_components/logo';
+@import './layout/header';
+@import './_components/menu';
+@import './_components/site-nav';
