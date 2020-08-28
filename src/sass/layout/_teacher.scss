@@ -1,6 +1,15 @@
 .teacher {
   padding-top: 270px;
   padding-bottom: 50px;
+
+  @include tablet() {
+    padding-top: 302px;
+  }
+
+  @include desktop() {
+    padding-top: 329px;
+    padding-bottom: 130px;
+  }
 }
 
 .teacher-section-title {
@@ -11,6 +20,16 @@
   text-align: left;
   margin-top: 39px;
   margin-bottom: 20px;
+  @include tablet() {
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  @include desktop() {
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
 }
 
 .teacher-title {
@@ -20,6 +39,15 @@
   line-height: 1.2;
   letter-spacing: 0.08em;
   margin-top: 21px;
+
+  @include tablet() {
+    margin-top: 0;
+  }
+
+  @include desktop() {
+    font-size: 30px;
+    line-height: 123%;
+  }
 }
 
 .teacher-title:after {
@@ -30,6 +58,11 @@
   height: 1px;
   margin-top: 10px;
   margin-bottom: 20px;
+
+  @include desktop() {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
 }
 
 .teacher-list {
@@ -49,6 +82,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include desktop() {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
 .teacher-fl-item {
@@ -62,6 +100,20 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include desktop() {
+    font-size: 18px;
+    line-height: 156%;
+  }
+}
+
+.teacher-fl-item.position {
+  @include tablet() {
+    margin-bottom: 10px;
+  }
+  @include desktop() {
+    margin-bottom: 20px;
+  }
 }
 
 .teacher-fl-text {
@@ -71,9 +123,19 @@
 .teacher-features-list::before {
   content: '—';
   display: block;
+  margin-bottom: 15px;
   color: $hover-color;
 }
 
 .teacher-wrapper {
-  display: flex;
+  @include tablet() {
+    display: flex;
+  }
+}
+
+.teacher-right-side {
+  @include tablet() {
+    width: 58%;
+    margin-left: 40px;
+  }
 }
