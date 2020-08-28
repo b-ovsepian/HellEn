@@ -1,0 +1,141 @@
+.section-doit {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-doit-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include tablet() {
+    font-size: 26px;
+    line-height: 130%;
+  }
+
+  @include desktop() {
+    text-align: left;
+    font-size: 46px;
+  }
+}
+
+.doit-list {
+  @include tablet() {
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.doit-list-item-title {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 143%;
+
+  letter-spacing: 0.08em;
+
+  @include tablet() {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #ff6b09;
+    margin: 0 auto;
+    margin-top: 15px;
+
+    @include tablet() {
+      margin-top: 25px;
+    }
+
+    @include tablet() {
+      margin-top: 15px;
+    }
+  }
+
+  .doit-list-item:hover & {
+    color: $light-background-color;
+  }
+}
+
+.doit-list-item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 167%;
+
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-bottom: 0;
+  color: $secondary-text-color;
+
+  .doit-list-item:hover & {
+    color: $light-background-color;
+  }
+
+  @include desktop() {
+    font-size: 18px;
+    line-height: 156%;
+  }
+}
+
+.doit-list-item {
+  width: 100%;
+  padding-top: 29px;
+  padding-bottom: 22px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+
+  &:hover {
+    background-color: #ff6b09;
+  }
+
+  &:last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-last-child(-n + 2) {
+    @media screen and (max-width: 1343px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include tablet {
+    margin: 10px;
+    margin-bottom: 17px;
+    width: calc((100% - 40px) / 2);
+  }
+
+  @include desktop {
+    margin: 10px;
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.doit-icon {
+  fill: $hover-color;
+  //   width: 50px;
+  //   height: 50px;
+  margin-bottom: 20px;
+
+  .doit-list-item:hover & {
+    fill: $light-background-color;
+  }
+
+  @include tablet() {
+    margin-bottom: 30px;
+  }
+}
