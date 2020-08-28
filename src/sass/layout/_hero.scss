@@ -78,6 +78,7 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
+  border: none;
 
   @include tablet {
     margin: 0;
@@ -160,18 +161,18 @@
 }
 
 .hero {
-  background-image: url('../../src/images/heronew/background/backphone.jpg');
+  background-image: url('../images/heronew/background/backphone.jpg');
   background-position-y: -25%;
 
   @include tablet() {
-    background-image: url('../../src/images/heronew/background/backtablet.jpg');
+    background-image: url('../images/heronew/background/backtablet.jpg');
     background-repeat: no-repeat;
     background-position-y: 301%;
     background-position-x: 52%;
   }
 
   @include desktop() {
-    background-image: url('../../src/images/heronew/background/backdesk.jpg');
+    background-image: url('../images/heronew/background/backdesk.jpg');
     background-position-y: -413%;
     background-position-x: 40%;
   }
