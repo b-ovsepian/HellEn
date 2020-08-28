@@ -74,15 +74,34 @@
   margin-bottom: 30px;
 }
 
-.button {
+.button-hero {
+  width: 260px;
+  height: 48px;
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
   border: none;
+  background-color: $hover-color;
+  color: $light-background-color;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
   @include tablet {
     margin: 0;
     margin-right: auto;
+  }
+
+  @include desktop() {
+    width: 354px;
+    height: 70px;
+    padding: 25px;
+    font-size: 14px;
+    line-height: 1.21;
   }
 }
 
