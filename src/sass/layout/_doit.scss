@@ -1,6 +1,14 @@
 .section-doit {
-  padding-top: 50px;
+  padding-top: 198px;
   padding-bottom: 50px;
+
+  @include tablet() {
+    padding-top: 202px;
+  }
+
+  @include desktop() {
+    padding-top: 280px;
+  }
 }
 
 .section-doit-title {
