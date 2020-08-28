@@ -139,3 +139,7 @@
     margin-bottom: 30px;
   }
 }
+
+.doit-list-item:hover .doit-list-item-title::after {
+  background-color: #ffffff;
+}
