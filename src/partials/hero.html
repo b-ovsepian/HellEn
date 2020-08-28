@@ -1,2 +1,74 @@
 <!-- Hero -->
 <!-- Пишем без doctype -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-wrapper">
+      <div class="hero-left-block">
+        <h1 class="page-title">
+          Комплексная подготовка к ВНО по английскому языку
+        </h1>
+
+        <p class="hero-title">
+          <span class="hero-text grey">Просто не будет.</span>
+          <span class="hero-text black">Но ты гарантировано наберешь</span>
+          <span class="hero-text orange">+25 баллов</span>
+        </p>
+
+        <button type="button" class="button primary">
+          хочу на бесплатное занятие
+        </button>
+      </div>
+
+      <div class="hero-right-block">
+        <div class="main-content-picture">
+          <picture>
+            <source
+              srcset="
+                ./images/heronew/phone/team.jpg    1x,
+                ./images/heronew/phone/team@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/heronew/tablet/team.jpg    1x,
+                ./images/heronew/tablet/team@2x.jpg 2x
+              "
+              media="(max-width: 1343px)"
+            />
+
+            <source
+              srcset="
+                ./images/heronew/desktop/desktop.jpg    1x,
+                ./images/heronew/desktop/desktop@2x.jpg 2x
+              "
+              media="(min-width: 1344px)"
+            />
+
+            <img src="./images/heronew/phone/team.jpg" alt="Учитель" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <ul class="hero-list list">
+      <li class="hero-list-item">
+        <svg class="hero-icon" width="58.82" height="60">
+          <use href="./images/heronew/symbol-defs.svg#iconGroup-1-2"></use>
+        </svg>
+        <p class="hero-list-text">Адаптированная авторская программа ВНО</p>
+      </li>
+      <li class="hero-list-item">
+        <svg class="hero-icon" width="58.82" height="60">
+          <use href="./images/heronew/symbol-defs.svg#iconGroup-1-1"></use>
+        </svg>
+        <p class="hero-list-text">Современные методики обучения</p>
+      </li>
+      <li class="hero-list-item">
+        <svg class="hero-icon" width="58.82" height="60">
+          <use href="./images/heronew/symbol-defs.svg#iconGroup-1"></use>
+        </svg>
+        <p class="hero-list-text">Финансовая гарантия результата</p>
+      </li>
+    </ul>
+  </div>
+</section>
