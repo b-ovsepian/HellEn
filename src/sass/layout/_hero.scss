@@ -89,7 +89,8 @@
   padding-top: 14px;
   padding-bottom: 14px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $hover-color;
     color: $light-background-color;
     border: none;
