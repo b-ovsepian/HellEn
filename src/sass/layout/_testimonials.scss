@@ -2,6 +2,17 @@
   padding-top: 50px;
   padding-bottom: 130px;
 }
+.testimonials-main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 82px;
+  padding-right: 112px;
+
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  justify-content: space-between;
+}
 .testimonials-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -14,6 +25,7 @@
   letter-spacing: 0.03em;
 }
 .testimonials-name {
+  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 800;
@@ -24,7 +36,8 @@
   color: $hover-color;
 }
 .testimonials-university {
-  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
 
   font-weight: 500;
   font-size: 14px;
@@ -52,6 +65,33 @@
 
   color: $hover-color;
 }
+.tesimonials-profile {
+  width: 150px;
+}
 .testimonials-box {
   width: calc(100% - 190px);
+}
+.testimonials-picture__img {
+  margin-bottom: 20px;
+}
+.testimonials-social__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonials-thumb-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-thumb-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.testimonials-link__img {
+  border: 2px transparent;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $hover-color;
+  }
 }
