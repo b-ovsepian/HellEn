@@ -1,6 +1,5 @@
 .teacher {
   padding-top: 270px;
-  padding-bottom: 50px;
 
   @include tablet() {
     padding-top: 302px;
@@ -8,7 +7,6 @@
 
   @include desktop() {
     padding-top: 329px;
-    padding-bottom: 130px;
   }
 }
 

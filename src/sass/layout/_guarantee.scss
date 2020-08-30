@@ -1,0 +1,136 @@
+.guarantee {
+  padding-top: 50px;
+
+  @include desktop() {
+    padding-top: 130px;
+  }
+}
+
+.section-wrapper {
+  background-color: #f1f1f1;
+
+  @include tablet() {
+    background-color: transparent;
+  }
+}
+
+.guarantee-title {
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
+  @include desktop() {
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+}
+
+.guarantee-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 167%;
+
+  @include desktop() {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+.guarantee-list {
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 27px;
+
+  @include tablet() {
+    width: 688px;
+    background-color: #f1f1f1;
+    padding-left: 118px;
+  }
+
+  @include desktop() {
+    width: 1314px;
+    padding-left: 164px;
+  }
+}
+
+.guarantee-item {
+  position: relative;
+
+  margin-bottom: 23px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: $minor-text-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablet() {
+    width: 520px;
+  }
+
+  @include desktop() {
+    width: 1038px;
+  }
+}
+
+.last-item {
+  position: relative;
+  @include tablet() {
+    width: 520px;
+  }
+
+  @include desktop() {
+    width: 1038px;
+  }
+}
+
+.guarantee-item::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 77px;
+  border-left: 1px dashed #b9b9b9;
+  top: 0;
+  transform: translate(-26px, 24px);
+
+  @include tablet() {
+    transform: translate(-28px, 4px);
+  }
+  @include desktop() {
+    transform: translate(-30px, 4px);
+  }
+}
+
+.guar-list-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $hover-color;
+  transform: translateX(-33px);
+
+  @include tablet() {
+    transform: translateX(-35px);
+  }
+
+  @include desktop() {
+    width: 22px;
+    height: 30px;
+    transform: translateX(-41px);
+  }
+}
+
+.guarantee-text__color {
+  color: $hover-color;
+}
