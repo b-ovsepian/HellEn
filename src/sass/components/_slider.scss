@@ -64,15 +64,3 @@
 .slider__control_right::before {
   background-image: url('../images/icon-Arrow_right.svg');
 }
-
-.slider__item > div {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 82px;
-  padding-right: 112px;
-
-  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.4);
-
-  display: flex;
-  justify-content: space-between;
-}
