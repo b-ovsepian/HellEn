@@ -55,28 +55,29 @@
 
 }
 .semester-list {
-    position: relative;
+    // position: relative;
     &::before {
         position: absolute;
         content: "";
         display: block;
         background-color: white;
         width: 1px;
-        height: 92%;
-        top: 1%;
-        left: -26px;
+        height: 1282px;
+        top: 131px;
+        left: 94px;
         @media screen and(min-width: $tablet) {
-            left: -56px;
-            height: 87%;
+            height: 705px;
+            top: 157px;
+            left: 102px;
         }
     }
     @media screen and(min-width: $desktop) {
         display: flex;
         &::before {
             height: 1px;
-            width: 1690px;
-            left: -15%;
-            top: -60px;
+            width: 100%;
+            left: 0px;
+            top: 279px;
         }
     }
 }
@@ -123,7 +124,7 @@
         left: -17%;
         @media screen and(min-width: $tablet) {
             left: -61px;       
-        }
+     }
         @media screen and(min-width: $desktop) {
             width: 17.4px;
             height: 16px;
