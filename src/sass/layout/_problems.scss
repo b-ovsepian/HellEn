@@ -84,7 +84,7 @@ ul {
     }
     
     @media screen and(min-width: $tablet) and (max-width: 1679px) {
-        width: 225px;
+        width: calc((100% - 25px * 1) / 2);
 
         &:nth-last-child(n+3) {
             margin-bottom: 61px;
@@ -103,7 +103,7 @@ ul {
         &:not(:nth-last-child(-n+3)) {
             margin-bottom: 75px;
         }
-        width: 336px;
+        width: calc((100% - 40px * 2) / 3);
     }
 
 
