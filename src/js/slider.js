@@ -64,6 +64,19 @@ var multiItemSlider = (function () {
       _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
     };
 
+    const list = document.querySelector('.testimonials-thumb-list');
+    console.log(list);
+    _sliderControlRight.addEventListener('click', handler);
+    _sliderControlLeft.addEventListener('click', onHandler);
+
+    function handler() {
+      list.style.transform = 'translateX(' + (_transform - 100) + 'px)';
+    }
+
+    function onHandler() {
+      list.style.transform = 'translateX(' + (_transform + 100) + 'px)';
+    }
+
     // обработчик события click для кнопок "назад" и "вперед"
     var _controlClick = function (e) {
       if (e.target.classList.contains('slider__control')) {
