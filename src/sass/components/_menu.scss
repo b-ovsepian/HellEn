@@ -30,6 +30,7 @@
     background: rgba(17, 21, 24, 0.9);
     &.is-open {
       display: block;
+      overflow-y: scroll;
     }
   }
   @media screen and(min-width: $tablet) and (max-width: $desktop - 1px) {
