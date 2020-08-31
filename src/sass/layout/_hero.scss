@@ -114,7 +114,6 @@
 .main-content-picture {
   display: block;
   margin: 0 auto;
-  margin-bottom: 77px;
 
   @include tablet {
     margin: 0;
@@ -129,6 +128,11 @@
   @include tablet() {
     margin: 10px;
     width: calc((100% - 60px) / 3);
+  }
+
+  @include desktop() {
+    margin: 0;
+    width: calc(100% / 3);
   }
 }
 
@@ -164,6 +168,7 @@
 }
 
 .hero-list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -172,31 +177,35 @@
     flex-wrap: nowrap;
     margin: -10px;
   }
+
+  @include desktop() {
+    margin: 0;
+  }
 }
 
 .hero-wrapper {
+  padding-bottom: 77px;
+  background-image: url('../images/heronew/background/backphone.jpg');
+  background-position: bottom;
+  background-size: cover;
+
   @include tablet() {
     display: flex;
     flex-wrap: nowrap;
-    margin-bottom: 114px;
+    padding-bottom: 114px;
     justify-content: space-between;
-  }
-}
-
-.hero {
-  background-image: url('../images/heronew/background/backphone.jpg');
-  background-position-y: -25%;
-
-  @include tablet() {
-    background-image: url('../images/heronew/background/backtablet.jpg');
-    background-repeat: no-repeat;
-    background-position-y: 301%;
-    background-position-x: 52%;
+    background-image: url('../images/heronew/backgrupd/backtablet-tab.png');
+    background-position: bottom;
   }
 
   @include desktop() {
-    background-image: url('../images/heronew/background/backdesk.jpg');
-    background-position-y: -413%;
-    background-position-x: 40%;
+    padding-bottom: 106px;
+    background-image: url('../images/heronew/backgrupd/backdesk-desk.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
   }
+}
+
+.hero img {
+  margin: 0 auto;
 }
