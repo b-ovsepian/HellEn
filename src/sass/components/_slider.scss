@@ -43,6 +43,9 @@
   opacity: 0.5;
   height: 50px;
   transform: translateY(-50%);
+  @media screen and (max-width: $tablet - 1px) {
+    top: 95%;
+  }
 }
 
 .slider__control_show {
