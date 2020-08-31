@@ -1,0 +1,144 @@
+.teacher {
+  padding-top: 270px;
+
+  @include tablet() {
+    padding-top: 302px;
+  }
+
+  @include desktop() {
+    padding-top: 329px;
+  }
+}
+
+.teacher-section-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-top: 39px;
+  margin-bottom: 20px;
+  @include tablet() {
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  @include desktop() {
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
+}
+
+.teacher-title {
+  text-align: left;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  margin-top: 21px;
+
+  @include tablet() {
+    margin-top: 0;
+  }
+
+  @include desktop() {
+    font-size: 30px;
+    line-height: 123%;
+  }
+}
+
+.teacher-title:after {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #b9b9b9;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  @include desktop() {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.teacher-list {
+  list-style-image: url('./../images/teacher/teachertick.svg');
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.teacher-list-item {
+  margin-left: 9px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include desktop() {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+.teacher-fl-item {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 167%;
+
+  color: #b9b9b9;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include desktop() {
+    font-size: 18px;
+    line-height: 156%;
+  }
+}
+
+.teacher-fl-item.position {
+  @include tablet() {
+    margin-bottom: 10px;
+  }
+  @include desktop() {
+    margin-bottom: 20px;
+  }
+}
+
+.teacher-fl-text {
+  color: $hover-color;
+}
+
+.teacher-features-list::before {
+  content: '—';
+  display: block;
+  margin-bottom: 15px;
+  color: $hover-color;
+}
+
+.teacher-wrapper {
+  @include tablet() {
+    display: flex;
+  }
+}
+
+.teacher-right-side {
+  @include tablet() {
+    width: 58%;
+    margin-left: 40px;
+  }
+}
+
+.teacher-fl-link {
+  text-decoration: none;
+  color: $hover-color;
+}

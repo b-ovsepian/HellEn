@@ -3,13 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World!</title>
+    <title>HellEN</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/icon.svg" />
   </head>
-  <body>
+  <body data-body class="body">
+    <!-- Header -->
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
-
+    <include src="./partials/header.html"></include>
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <include src="./partials/hero.html"></include>
+      <!-- Problems -->
+      <include src="./partials/problems.html"></include>
+      <!-- WeDoIt -->
+      <include src="./partials/sectiondoit.html"></include>
+      <!-- Program -->
+      <include src="./partials/program.html"></include>
+      <!-- WeDoIt -->
+      <include src="./partials/teacher.html"></include>
+      <!-- Guarantee -->
+      <include src="./partials/guarantee.html"></include>
+      <!-- Testimonials -->
+      <include src="./partials/testimonials.html"></include>
+    </main>
+    <!-- Footer -->
+    <include src="./partials/registration.html"></include>
+    <include src="./partials/footer.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/registration.js"></script>
   </body>
 </html>

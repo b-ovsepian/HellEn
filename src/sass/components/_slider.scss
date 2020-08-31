@@ -1,0 +1,86 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  flex: 0 0 100%;
+  max-width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: $desktop - 1px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  @media screen and (max-width: $tablet - 1px) {
+    top: 95%;
+  }
+}
+
+.slider__control_show {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_left {
+  left: 0;
+}
+
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url('../images/icon-Arrow_left.svg');
+}
+
+.slider__control_right::before {
+  background-image: url('../images/icon-Arrow_right.svg');
+}
