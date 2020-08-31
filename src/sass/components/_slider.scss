@@ -9,9 +9,26 @@
 }
 
 .slider__item {
-  padding: 40px 60px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   flex: 0 0 100%;
   max-width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: $desktop - 1px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .slider__control {
