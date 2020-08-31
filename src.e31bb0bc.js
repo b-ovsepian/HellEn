@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./../images/heronew/background/backphone.jpg":[["backphone.91ecc8ad.jpg","images/heronew/background/backphone.jpg"],"images/heronew/background/backphone.jpg"],"./../images/heronew/backgrupd/backtablet-tab.png":[["backtablet-tab.4e6860b7.png","images/heronew/backgrupd/backtablet-tab.png"],"images/heronew/backgrupd/backtablet-tab.png"],"./../images/heronew/backgrupd/backdesk-desk.png":[["backdesk-desk.38e20a4a.png","images/heronew/backgrupd/backdesk-desk.png"],"images/heronew/backgrupd/backdesk-desk.png"],"./../images/campfire.png":[["campfire.6d89cfeb.png","images/campfire.png"],"images/campfire.png"],"./../images/teacher/teachertick.svg":[["teachertick.af906adc.svg","images/teacher/teachertick.svg"],"images/teacher/teachertick.svg"],"./../images/programm/mobile/main_pic.png":[["main_pic.09c7074a.png","images/programm/mobile/main_pic.png"],"images/programm/mobile/main_pic.png"],"./../images/programm/tablet/main_pic.png":[["main_pic.672f160c.png","images/programm/tablet/main_pic.png"],"images/programm/tablet/main_pic.png"],"./../images/programm/desctop/main_pic.png":[["main_pic.59c0f53e.png","images/programm/desctop/main_pic.png"],"images/programm/desctop/main_pic.png"],"./../images/icon-Arrow_left.svg":[["icon-Arrow_left.3c9430dd.svg","images/icon-Arrow_left.svg"],"images/icon-Arrow_left.svg"],"./../images/icon-Arrow_right.svg":[["icon-Arrow_right.3f74bd86.svg","images/icon-Arrow_right.svg"],"images/icon-Arrow_right.svg"],"./../images/reg/mobile/reg_background.png":[["reg_background.a7ea6974.png","images/reg/mobile/reg_background.png"],"images/reg/mobile/reg_background.png"],"./../images/reg/mobile/reg_background@2x.png":[["reg_background@2x.cfc66a0f.png","images/reg/mobile/reg_background@2x.png"],"images/reg/mobile/reg_background@2x.png"],"./../images/reg/tablet/reg_background.png":[["reg_background.86cf79f6.png","images/reg/tablet/reg_background.png"],"images/reg/tablet/reg_background.png"],"./../images/reg/tablet/reg_background@2x.png":[["reg_background@2x.6cfce0cb.png","images/reg/tablet/reg_background@2x.png"],"images/reg/tablet/reg_background@2x.png"],"./../images/reg/desctop/reg_background.png":[["reg_background.c21e5437.png","images/reg/desctop/reg_background.png"],"images/reg/desctop/reg_background.png"],"./../images/reg/desctop/reg_background@2x.png":[["reg_background@2x.9495a059.png","images/reg/desctop/reg_background@2x.png"],"images/reg/desctop/reg_background@2x.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56725" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56020" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
