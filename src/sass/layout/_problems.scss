@@ -34,10 +34,10 @@ ul {
   background-color: $light-background-color;
   counter-reset: section;
   position: absolute;
-  top: 205px;
+  top: 27px;
   left: 50%;
   transform: translate(-50%, 0);
-  // width: 280px;
+  width: 100%;
 
   padding-top: 50px;
   padding-left: 30px;
@@ -48,7 +48,7 @@ ul {
 
   @media screen and(min-width: $tablet) {
     // width: 688px;
-    top: 188px;
+    top: 27px;
     padding-left: 96px;
     padding-right: 96px;
     padding-top: 59px;
@@ -56,23 +56,23 @@ ul {
   }
 
   @media screen and(min-width: $desktop) {
-    // width: 1314px;
-    top: 348px;
+    height: 362px;
+    top: 70px;
     padding-left: 114px;
     padding-right: 112px;
     padding-top: 113px;
     padding-bottom: 62px;
   }
 }
-
-.modal-list {
+.problem-wraper {
+  position: relative;
+}
+.modal-style {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.08em;
     list-style-type: none;
-    
-    
 
     @media screen and(min-width: $tablet) {
         display: flex;
@@ -91,7 +91,7 @@ ul {
 .problems-modal-list {
   @media screen and(max-width: 767px) {
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 48px;
     }
   }
 
@@ -141,7 +141,7 @@ ul {
 .modal-item {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.42;
   letter-spacing: 0.08em;
   position: relative;
 
