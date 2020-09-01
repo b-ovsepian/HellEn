@@ -78,22 +78,23 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-color: $light-background-color;
-  color: $hover-color;
+  background-color: $hover-color;
+  color: $light-background-color;
   border: 2px solid #ff6b09;
-  font-weight: 900;
-  font-size: 11px;
-  line-height: 1.21;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-align: center;
   padding-top: 14px;
   padding-bottom: 14px;
+  transition: color 250ms $cubic-timing, background-color 250ms $cubic-timing;
 
   &:hover,
   &:focus {
-    background-color: $hover-color;
-    color: $light-background-color;
-    border: none;
+    background-color: $light-background-color;
+    color: $hover-color;
     cursor: pointer;
   }
 
