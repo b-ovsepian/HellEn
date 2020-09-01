@@ -3,9 +3,9 @@
   const mobileMenuRef = document.querySelector('[data-menu]');
   const logoRef = document.querySelector('[data-logo]');
   const bodyRef = document.querySelector('[data-body]');
-  const link1Ref = document.querySelector('[data-link_1]');
-  const link2Ref = document.querySelector('[data-link_2]');
-  const link3Ref = document.querySelector('[data-link_3]');
+  // const link1Ref = document.querySelector('[data-link_1]');
+  // const link2Ref = document.querySelector('[data-link_2]');
+  // const link3Ref = document.querySelector('[data-link_3]');
 
   menuBtnRef.addEventListener('click', () => {
     const expanded =
