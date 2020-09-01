@@ -55,7 +55,6 @@
 
 }
 .semester-list {
-    // position: relative;
     &::before {
         position: absolute;
         content: "";
@@ -64,11 +63,14 @@
         width: 1px;
         height: 1282px;
         top: 131px;
-        left: 94px;
+        left: 29%;
+        @media screen and(max-width: 1343px) {
+            transform: translateX(-50%);;
+        }
         @media screen and(min-width: $tablet) {
             height: 705px;
             top: 157px;
-            left: 102px;
+            left: 13%;
         }
     }
     @media screen and(min-width: $desktop) {
@@ -102,7 +104,6 @@
     }
 }
 .semester-title {
-    position: relative;
     margin-bottom: 11px;
 
     color: $light-background-color;
@@ -111,6 +112,10 @@
     line-height: 2;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    
+    @media screen and(min-width: $desktop) {
+            position: relative;
+    }
 
 
     &::before {
@@ -121,10 +126,15 @@
         height: 12px;
         background-color: $hover-color;
         border-radius: 50%;
-        top: 30%;
-        left: -17%;
+        
+        left: 29%;
+
+        @media screen and(max-width: 1343px) {
+            transform: translate(-50%, 50%);
+            
+        }
         @media screen and(min-width: $tablet) {
-            left: -61px;       
+            left: 13%;       
      }
         @media screen and(min-width: $desktop) {
             width: 17.4px;
