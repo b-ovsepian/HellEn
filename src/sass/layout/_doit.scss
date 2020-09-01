@@ -80,6 +80,7 @@
 
   .doit-list-item:hover & {
     color: $light-background-color;
+    cursor: pointer;
   }
 }
 
@@ -97,6 +98,7 @@
 
   .doit-list-item:hover & {
     color: $light-background-color;
+    cursor: pointer;
   }
 
   @include tablet() {
@@ -122,6 +124,7 @@
 
   &:hover {
     background-color: #ff6b09;
+    cursor: pointer;
   }
 
   &:last-child {
