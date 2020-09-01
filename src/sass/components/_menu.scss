@@ -61,10 +61,14 @@
 .cont-button {
   display: block;
   margin-left: auto;
+  text-decoration: none;
   @media screen and(max-width: $desktop - 1px) {
     margin-right: auto;
   }
   @media screen and(min-width: $tablet) and(max-width: $desktop - 1px) {
     display: none;
+  }
+  @media screen and (max-width: $tablet - 1px) {
+    width: max-content;
   }
 }
