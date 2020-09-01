@@ -47,6 +47,7 @@
   line-height: 143%;
 
   letter-spacing: 0.08em;
+  transition: color 250ms $cubic-timing;
 
   @include tablet() {
     font-size: 14px;
@@ -66,6 +67,7 @@
     background-color: #ff6b09;
     margin: 0 auto;
     margin-top: 15px;
+    transition: color 250ms $cubic-timing;
 
     @include tablet() {
       margin-top: 25px;
@@ -78,6 +80,7 @@
 
   .doit-list-item:hover & {
     color: $light-background-color;
+    cursor: pointer;
   }
 }
 
@@ -91,9 +94,11 @@
   margin-bottom: 0;
   margin-top: 15px;
   color: $secondary-text-color;
+  transition: fill 250ms $cubic-timing;
 
   .doit-list-item:hover & {
     color: $light-background-color;
+    cursor: pointer;
   }
 
   @include tablet() {
@@ -115,9 +120,11 @@
   text-align: center;
   margin: 0;
   margin-bottom: 15px;
+  transition: background-color 250ms $cubic-timing;
 
   &:hover {
     background-color: #ff6b09;
+    cursor: pointer;
   }
 
   &:last-child {
@@ -149,6 +156,7 @@
   //   width: 50px;
   //   height: 50px;
   margin-bottom: 20px;
+  transition: fill 250ms $cubic-timing;
 
   .doit-list-item:hover & {
     fill: $light-background-color;

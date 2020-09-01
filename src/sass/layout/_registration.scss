@@ -115,6 +115,20 @@
   outline: none;
 }
 
+input {
+  &:invalid {
+    border-color: red;
+  }
+
+  &:valid {
+    border-color: green;
+  }
+
+  &:indeterminate {
+    border-color: $hover-color;
+  }
+}
+
 .contact-form-input:focus {
   border: 1px solid $hover-color;
 }

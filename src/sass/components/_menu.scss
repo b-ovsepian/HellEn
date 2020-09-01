@@ -6,6 +6,12 @@
   z-index: 3;
   cursor: pointer;
 
+  &.is-open {
+    position: fixed;
+    top: 58px;
+    right: 43px;
+  }
+
   @media screen and (max-width: $desktop - 1px) {
     display: inline-flex;
     margin: 0;
@@ -17,7 +23,7 @@
 .menu-container {
   @media screen and (max-width: $desktop - 1px) {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -61,10 +67,14 @@
 .cont-button {
   display: block;
   margin-left: auto;
+  text-decoration: none;
   @media screen and(max-width: $desktop - 1px) {
     margin-right: auto;
   }
   @media screen and(min-width: $tablet) and(max-width: $desktop - 1px) {
     display: none;
+  }
+  @media screen and (max-width: $tablet - 1px) {
+    width: max-content;
   }
 }
