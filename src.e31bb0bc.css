@@ -266,10 +266,6 @@ body {
   color: #111518;
 }
 
-.body.is-open {
-  overflow: hidden;
-}
-
 .list {
   padding: 0;
   margin: 0;
@@ -336,6 +332,8 @@ img {
   height: 48px;
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
@@ -424,6 +422,9 @@ img {
 .logo.is-open {
   color: #ffffff;
   z-index: 3;
+  position: fixed;
+  top: 42px;
+  left: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -526,21 +527,22 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-color: #ffffff;
-  color: #ff6b09;
-  border: 2px solid #ff6b09;
-  font-weight: 900;
-  font-size: 11px;
-  line-height: 1.21;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-.button-hero:hover, .button-hero:focus {
   background-color: #ff6b09;
   color: #ffffff;
-  border: none;
+  border: 2px solid #ff6b09;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-hero:hover, .button-hero:focus {
+  background-color: #ffffff;
+  color: #ff6b09;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -719,6 +721,7 @@ img {
   font-size: 14px;
   line-height: 143%;
   letter-spacing: 0.08em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .doit-list-item-title {
@@ -740,6 +743,7 @@ img {
   background-color: #ff6b09;
   margin: 0 auto;
   margin-top: 15px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .doit-list-item-title::after {
@@ -753,6 +757,7 @@ img {
 }
 .doit-list-item:hover .doit-list-item-title {
   color: #ffffff;
+  cursor: pointer;
 }
 
 .doit-list-item-text {
@@ -764,9 +769,11 @@ img {
   margin-bottom: 0;
   margin-top: 15px;
   color: #b9b9b9;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .doit-list-item:hover .doit-list-item-text {
   color: #ffffff;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .doit-list-item-text {
@@ -789,9 +796,11 @@ img {
   text-align: center;
   margin: 0;
   margin-bottom: 15px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .doit-list-item:hover {
   background-color: #ff6b09;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .doit-list-item:last-child {
@@ -820,6 +829,7 @@ img {
 .doit-icon {
   fill: #ff6b09;
   margin-bottom: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .doit-list-item:hover .doit-icon {
   fill: #ffffff;
@@ -843,6 +853,11 @@ img {
   z-index: 3;
   cursor: pointer;
 }
+.menu-button.is-open {
+  position: fixed;
+  top: 58px;
+  right: 43px;
+}
 @media screen and (max-width: 1343px) {
   .menu-button {
     display: inline-flex;
@@ -856,7 +871,7 @@ img {
 @media screen and (max-width: 1343px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -907,6 +922,7 @@ img {
 .cont-button {
   display: block;
   margin-left: auto;
+  text-decoration: none;
 }
 @media screen and (max-width: 1343px) {
   .cont-button {
@@ -916,6 +932,11 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1343px) {
   .cont-button {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cont-button {
+    width: max-content;
   }
 }
 
@@ -1034,10 +1055,10 @@ ul {
   background-color: #ffffff;
   counter-reset: section;
   position: absolute;
-  top: 205px;
+  top: 27px;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 280px;
+  width: 100%;
   padding-top: 50px;
   padding-left: 30px;
   padding-right: 30px;
@@ -1046,8 +1067,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .problem-modal {
-    width: 688px;
-    top: 188px;
+    top: 27px;
     padding-left: 96px;
     padding-right: 96px;
     padding-top: 59px;
@@ -1056,18 +1076,36 @@ ul {
 }
 @media screen and (min-width: 1344px) {
   .problem-modal {
-    width: 1314px;
-    top: 348px;
+    height: 362px;
+    top: 70px;
     padding-left: 114px;
     padding-right: 112px;
     padding-top: 113px;
     padding-bottom: 62px;
   }
 }
+
+.problem-wraper {
+  position: relative;
+}
+
+.modal-style {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+  list-style-type: none;
+}
 @media screen and (min-width: 768px) {
-  .problem-modal .list {
+  .modal-style {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .modal-style {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
@@ -1077,10 +1115,10 @@ ul {
 
 @media screen and (max-width: 767px) {
   .problems-modal-list:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-width: 768px) and (max-width: 1343px) {
   .problems-modal-list {
     width: calc((100% - 25px * 1) / 2);
   }
@@ -1127,33 +1165,30 @@ ul {
   }
 }
 
-.problems-modal-item {
+.modal-item {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.42;
   letter-spacing: 0.08em;
   position: relative;
 }
-.problems-modal-item::before {
+.modal-item::before {
   counter-increment: section;
   content: "— 0" counter(section);
   color: #ff6b09;
   position: absolute;
   left: 0;
-  top: -5px;
+  top: -10px;
   transform: translate(0, -100%);
-  font-size: 20px;
-  line-height: 1.2;
-}
-@media screen and (min-width: 768px) {
-  .problems-modal-item {
-    line-height: 1.43;
-  }
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.642;
+  letter-spacing: 0.08em;
 }
 @media screen and (min-width: 1344px) {
-  .problems-modal-item {
+  .modal-item::before {
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1.65;
   }
 }
 
@@ -1307,7 +1342,7 @@ ul {
 }
 
 .teacher-fl-link {
-  text-decoration: none;
+  text-decoration: underline;
   color: #ff6b09;
 }
 
@@ -1379,9 +1414,9 @@ h2 {
     height: 1237px;
     padding-top: 120px;
     background-image: url(/main_pic.59c0f53e.png);
-    background-size: auto 502px;
+    background-size: 40%;
     background-position-x: 0%;
-    background-position-y: 90%;
+    background-position-y: 676px;
   }
 }
 
@@ -1407,13 +1442,18 @@ h2 {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-width: 768px) and (max-width: 1343px) {
   .program-semester {
     padding-left: 118px;
     margin-bottom: 189px;
   }
 }
 
+@media screen and (max-width: 1343px) {
+  .semester-list {
+    position: relative;
+  }
+}
 .semester-list::before {
   position: absolute;
   content: "";
@@ -1421,14 +1461,18 @@ h2 {
   background-color: white;
   width: 1px;
   height: 1282px;
-  top: 131px;
-  left: 94px;
+}
+@media screen and (max-width: 1343px) {
+  .semester-list::before {
+    transform: translateX(-50%);
+    left: -20px;
+    top: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .semester-list::before {
     height: 705px;
-    top: 157px;
-    left: 102px;
+    left: -50px;
   }
 }
 @media screen and (min-width: 1344px) {
@@ -1448,7 +1492,7 @@ h2 {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-width: 768px) and (max-width: 1343px) {
   .semester-item-list:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1463,7 +1507,6 @@ h2 {
 }
 
 .semester-title {
-  position: relative;
   margin-bottom: 11px;
   color: #ffffff;
   font-weight: bold;
@@ -1471,6 +1514,11 @@ h2 {
   line-height: 2;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1344px) {
+  .semester-title {
+    position: relative;
+  }
 }
 .semester-title::before {
   position: absolute;
@@ -1480,12 +1528,16 @@ h2 {
   height: 12px;
   background-color: #ff6b09;
   border-radius: 50%;
-  top: 30%;
-  left: -17%;
+}
+@media screen and (max-width: 1343px) {
+  .semester-title::before {
+    transform: translate(-50%, 60%);
+    left: -20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .semester-title::before {
-    left: -61px;
+    left: -50px;
   }
 }
 @media screen and (min-width: 1344px) {
@@ -1555,7 +1607,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-width: 768px) and (max-width: 1343px) {
   .semester-flex-item:first-child {
     margin-right: 50px;
     width: 176px;
@@ -1592,8 +1644,10 @@ h2 {
 
 .advantages-modal {
   position: absolute;
+  width: 100%;
   height: 638px;
-  width: 280px;
+  left: 50%;
+  transform: translate(-50%, 0);
   padding-top: 53px;
   padding-right: 30px;
   padding-left: 30px;
@@ -1605,7 +1659,6 @@ h2 {
 @media screen and (min-width: 768px) {
   .advantages-modal {
     height: 394px;
-    width: 688px;
     padding-top: 63px;
     padding-right: 118px;
     padding-left: 98px;
@@ -1614,15 +1667,19 @@ h2 {
 }
 @media screen and (min-width: 1344px) {
   .advantages-modal {
-    width: 1314px;
     height: 398px;
-    padding-top: 113px;
+    padding-top: 120px;
     padding-right: 82px;
     padding-left: 84px;
     padding-bottom: 70px;
     bottom: 0;
-    transform: translate(0, 50%);
+    top: -125px;
+    transform: translate(-50%, 50%);
   }
+}
+
+.program-wraper {
+  position: relative;
 }
 
 .advantages-modal-list {
@@ -1653,26 +1710,7 @@ h2 {
     margin-bottom: 53px;
   }
 }
-.advantages-list-item::before {
-  counter-increment: section;
-  content: "— 0" counter(section);
-  color: #ff6b09;
-  position: absolute;
-  left: 0;
-  top: -10px;
-  transform: translate(0, -100%);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.642;
-  letter-spacing: 0.08em;
-}
-@media screen and (min-width: 1344px) {
-  .advantages-list-item::before {
-    font-size: 20px;
-    line-height: 1.65;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-width: 768px) and (max-width: 1343px) {
   .advantages-list-item:nth-last-child(n+3) {
     margin-bottom: 63px;
   }
@@ -2283,6 +2321,16 @@ h2 {
   border: 1px solid #ffffff;
   box-sizing: border-box;
   outline: none;
+}
+
+input:invalid {
+  border-color: red;
+}
+input:valid {
+  border-color: green;
+}
+input:indeterminate {
+  border-color: #ff6b09;
 }
 
 .contact-form-input:focus {
