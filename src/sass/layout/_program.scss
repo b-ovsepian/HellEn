@@ -23,9 +23,9 @@
         height: 1237px;
         padding-top: 120px;
         background-image: url(../images/programm/desctop/main_pic.png);
-        background-size: auto 502px;
+        background-size: 40%;
         background-position-x: 0%;
-        background-position-y: 90%;
+        background-position-y: 676px;
     }
 
 }
@@ -219,7 +219,6 @@
 
     }
     @media screen and(min-width: $desktop) {
-        // width: 240px;
         &:not(:last-child) {
             margin-bottom: 25px;
         }
@@ -245,7 +244,8 @@
 .advantages-modal {
     position: absolute;
     height: 638px;
-    // width: 280px;
+    left: 50%;
+    transform: translate(-50%, 0);
     padding-top: 53px;
     padding-right: 30px;
     padding-left: 30px;
@@ -258,7 +258,6 @@
 
     @media screen and(min-width: $tablet) {
         height: 394px;
-        // width: 688px;
         padding-top: 63px;
         padding-right: 118px;
         padding-left: 98px;
@@ -266,14 +265,13 @@
     }
 
     @media screen and(min-width: $desktop) {
-        // width: 1314px;
         height: 398px;
         padding-top: 113px;
         padding-right: 82px;
         padding-left: 84px;
         padding-bottom: 70px;
         bottom: 0;
-        transform: translate(0 , 50%);
+        transform: translate(-50%, 50%);
 
     }
 }
@@ -302,25 +300,25 @@
             margin-bottom: 53px;
         }
     }
-    &::before {
-        counter-increment: section;
-        content: "— 0" counter(section); 
-        color: $hover-color;
-        position: absolute;
-        left: 0;
-        top: -10px;
-        transform: translate(0, -100%);
+    // &::before {
+    //     counter-increment: section;
+    //     content: "— 0" counter(section); 
+    //     color: $hover-color;
+    //     position: absolute;
+    //     left: 0;
+    //     top: -10px;
+    //     transform: translate(0, -100%);
 
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.642;
-        letter-spacing: 0.08em;
+    //     font-weight: bold;
+    //     font-size: 14px;
+    //     line-height: 1.642;
+    //     letter-spacing: 0.08em;
 
-        @media screen and(min-width: $desktop) {
-            font-size: 20px;
-            line-height: 1.65;
-        }
-    }
+    //     @media screen and(min-width: $desktop) {
+    //         font-size: 20px;
+    //         line-height: 1.65;
+    //     }
+    // }
 
     @media screen and(min-width: $tablet) and (max-width: 1343px) {
 
