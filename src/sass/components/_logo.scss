@@ -43,13 +43,11 @@
   }
 }
 .logo.is-open {
-  @media (orientation: portrait) {
-    color: $light-background-color;
-    z-index: 3;
-    position: fixed;
-    top: 42px;
-    left: 40px;
-  }
+  color: $light-background-color;
+  z-index: 3;
+  position: fixed;
+  top: 42px;
+  left: 40px;
 }
 
 .logo-footer {

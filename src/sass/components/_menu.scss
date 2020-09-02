@@ -35,10 +35,8 @@
 
     background: rgba(17, 21, 24, 0.9);
     &.is-open {
-      @media (orientation: portrait) {
-        display: block;
-        overflow-y: scroll;
-      }
+      display: block;
+      overflow-y: scroll;
     }
   }
   @media screen and(min-width: $tablet) and (max-width: $desktop - 1px) {
@@ -56,10 +54,8 @@
   display: none;
 }
 .menu-button.is-open .icon-close {
-  @media (orientation: portrait) {
-    display: block;
-    fill: $light-background-color;
-  }
+  display: block;
+  fill: $light-background-color;
 }
 .menu-button.is-open .icon-menu {
   display: none;
