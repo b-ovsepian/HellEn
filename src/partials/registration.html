@@ -14,7 +14,7 @@
       <label class="contact-form-label">
         <input
           class="contact-form-input first-input"
-          type="text"
+          type="text" pattern="^[А-Яа-яЁё\s]+$"
           name="user-name"
           placeholder="Имя*"
           required/>
@@ -22,8 +22,8 @@
       <label class="contact-form-label">
         <input
           class="contact-form-input"
-          type="number"
-          name="user-tel"
+          type="tel"
+          name="user-tel" pattern="[0-9]{10}"
           placeholder="Телефон*"
           required/>
       </label>
