@@ -419,14 +419,12 @@ img {
   }
 }
 
-@media (orientation: portrait) {
-  .logo.is-open {
-    color: #ffffff;
-    z-index: 3;
-    position: fixed;
-    top: 42px;
-    left: 40px;
-  }
+.logo.is-open {
+  color: #ffffff;
+  z-index: 3;
+  position: fixed;
+  top: 42px;
+  left: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -884,8 +882,6 @@ img {
     z-index: 2;
     background: rgba(17, 21, 24, 0.9);
   }
-}
-@media screen and (max-width: 1343px) and (orientation: portrait) {
   .menu-container.is-open {
     display: block;
     overflow-y: scroll;
@@ -909,11 +905,9 @@ img {
   display: none;
 }
 
-@media (orientation: portrait) {
-  .menu-button.is-open .icon-close {
-    display: block;
-    fill: #ffffff;
-  }
+.menu-button.is-open .icon-close {
+  display: block;
+  fill: #ffffff;
 }
 
 .menu-button.is-open .icon-menu {
