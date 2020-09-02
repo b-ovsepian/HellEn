@@ -2348,18 +2348,25 @@ h2 {
   outline: none;
 }
 
-input:invalid {
-  border-color: red;
+input {
+  background-color: transparent;
 }
-input:valid {
+input:focus:not(:placeholder-shown):invalid, input:not(:placeholder-shown):invalid {
+  border-color: red;
+  background-color: transparent;
+}
+input:focus:not(:placeholder-shown):valid, input:not(:placeholder-shown):valid {
   border-color: green;
+  background-color: transparent;
 }
 input:indeterminate {
   border-color: #ff6b09;
+  background-color: transparent;
 }
 
 .contact-form-input:focus {
   border: 1px solid #ff6b09;
+  background-color: transparent;
 }
 
 .first-input {
