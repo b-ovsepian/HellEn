@@ -446,16 +446,20 @@ img {
 .hero {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-image: url("/backtablet-tab.4e6860b7.png");
+  background-position-x: 18%;
 }
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 72px;
+    background: none;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero {
     padding-top: 46px;
     padding-bottom: 130px;
+    background: none;
   }
 }
 
@@ -643,9 +647,6 @@ img {
 
 .hero-wrapper {
   padding-bottom: 77px;
-  background-image: url("/backphone.91ecc8ad.jpg");
-  background-position: bottom;
-  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .hero-wrapper {
