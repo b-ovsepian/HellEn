@@ -2,13 +2,18 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  background-image: url('../images/heronew/backgrupd/backtablet-tab.png');
+  background-position-x: 18%;
+
   @include tablet() {
     padding-top: 72px;
+    background: none;
   }
 
   @include desktop() {
     padding-top: 46px;
     padding-bottom: 130px;
+    background: none;
   }
 }
 
@@ -186,9 +191,6 @@
 
 .hero-wrapper {
   padding-bottom: 77px;
-  background-image: url('../images/heronew/background/backphone.jpg');
-  background-position: bottom;
-  background-size: cover;
 
   @include tablet() {
     display: flex;
