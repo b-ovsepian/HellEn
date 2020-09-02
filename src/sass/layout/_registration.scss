@@ -116,21 +116,29 @@
 }
 
 input {
-  &:invalid {
+  background-color: transparent;
+
+  &:focus:not(:placeholder-shown):invalid,
+  &:not(:placeholder-shown):invalid {
     border-color: red;
+    background-color: transparent;
   }
 
-  &:valid {
+  &:focus:not(:placeholder-shown):valid,
+  &:not(:placeholder-shown):valid {
     border-color: green;
+    background-color: transparent;
   }
 
   &:indeterminate {
     border-color: $hover-color;
+    background-color: transparent;
   }
 }
 
 .contact-form-input:focus {
   border: 1px solid $hover-color;
+  background-color: transparent;
 }
 
 .first-input {

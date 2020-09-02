@@ -174,7 +174,8 @@
   @media screen and (max-width: $tablet - 1px) {
     max-width: max-content;
   }
-
+}
+.testimonials-tablet .testimonials-link__img {
   &:hover,
   &:focus {
     border: 2px solid $hover-color;

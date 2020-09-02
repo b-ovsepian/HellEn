@@ -23,7 +23,7 @@
     }
   }
   @media screen and(min-width: $desktop) {
-    &:not(:last-child) {
+    &:nth-child(even) {
       margin-right: 40px;
     }
   }
