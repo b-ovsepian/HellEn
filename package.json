@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://b-ovsepian.github.io/my-project",
+  "homepage": "https://github.com/b-ovsepian/hellen",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/my-project/",
+    "predeploy": "npm run build -- --public-url=/hellen/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
