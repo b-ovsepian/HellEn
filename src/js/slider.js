@@ -65,16 +65,29 @@ var multiItemSlider = (function () {
     };
 
     const list = document.querySelector('.testimonials-thumb-list');
-    console.log(list);
+    var img = [
+      document.querySelector('.data-img_1'),
+      document.querySelector('.data-img_2'),
+      document.querySelector('.data-img_3'),
+      document.querySelector('.data-img_4'),
+      document.querySelector('.data-img_5'),
+      document.querySelector('.data-img_6'),
+      document.querySelector('.data-img_7'),
+    ];
     _sliderControlRight.addEventListener('click', handler);
     _sliderControlLeft.addEventListener('click', onHandler);
+    img[0].style.border = '2px solid #ff6b09';
 
     function handler() {
       list.style.transform = 'translateX(' + (_transform - 100) + 'px)';
+      img[_positionLeftItem].style.border = '2px solid transparent';
+      img[_positionLeftItem + 1].style.border = '2px solid #ff6b09';
     }
 
     function onHandler() {
       list.style.transform = 'translateX(' + (_transform + 100) + 'px)';
+      img[_positionLeftItem].style.border = '2px solid transparent';
+      img[_positionLeftItem - 1].style.border = '2px solid #ff6b09';
     }
 
     // обработчик события click для кнопок "назад" и "вперед"
