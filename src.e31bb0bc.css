@@ -2117,7 +2117,8 @@ h2 {
     max-width: max-content;
   }
 }
-.testimonials-link__img:hover, .testimonials-link__img:focus {
+
+.testimonials-tablet .testimonials-link__img:hover, .testimonials-tablet .testimonials-link__img:focus {
   border: 2px solid #ff6b09;
 }
 
