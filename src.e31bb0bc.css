@@ -940,6 +940,24 @@ img {
   }
 }
 
+.tablet-link {
+  display: block;
+}
+@media screen and (min-width: 1344px) {
+  .tablet-link {
+    display: none;
+  }
+}
+
+.desktop-link {
+  display: none;
+}
+@media screen and (min-width: 1344px) {
+  .desktop-link {
+    display: block;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -967,7 +985,7 @@ img {
   }
 }
 @media screen and (min-width: 1344px) {
-  .site-nav .item:not(:last-child) {
+  .site-nav .item:nth-child(even) {
     margin-right: 40px;
   }
 }
