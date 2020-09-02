@@ -78,3 +78,15 @@
     width: max-content;
   }
 }
+.tablet-link {
+  display: block;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.desktop-link {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
