@@ -142,7 +142,7 @@ var multiItemSlider = function () {
         // позиция левого активного элемента
     _transform = 0,
         // значение транфсофрмации .slider_wrapper
-    _step = _itemWidth / _wrapperWidth * (100 % -120),
+    _step = _itemWidth / _wrapperWidth * 100,
         // величина шага (для трансформации)
     _items = []; // массив элементов
     // наполнение массива _items
@@ -197,28 +197,7 @@ var multiItemSlider = function () {
       }
 
       _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
-    };
-
-    var list = document.querySelector('.testimonials-thumb-list');
-    var img = [document.querySelector('.data-img_1'), document.querySelector('.data-img_2'), document.querySelector('.data-img_3'), document.querySelector('.data-img_4'), document.querySelector('.data-img_5'), document.querySelector('.data-img_6'), document.querySelector('.data-img_7')];
-
-    _sliderControlRight.addEventListener('click', handler);
-
-    _sliderControlLeft.addEventListener('click', onHandler);
-
-    img[0].style.border = '2px solid #ff6b09';
-
-    function handler() {
-      list.style.transform = 'translateX(' + (_transform - 100) + 'px)';
-      img[_positionLeftItem].style.border = '2px solid transparent';
-      img[_positionLeftItem + 1].style.border = '2px solid #ff6b09';
-    }
-
-    function onHandler() {
-      list.style.transform = 'translateX(' + (_transform + 100) + 'px)';
-      img[_positionLeftItem].style.border = '2px solid transparent';
-      img[_positionLeftItem - 1].style.border = '2px solid #ff6b09';
-    } // обработчик события click для кнопок "назад" и "вперед"
+    }; // обработчик события click для кнопок "назад" и "вперед"
 
 
     var _controlClick = function _controlClick(e) {
@@ -282,7 +261,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54496" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57681" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

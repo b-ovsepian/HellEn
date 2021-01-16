@@ -118,45 +118,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/menu.js":[function(require,module,exports) {
+'use strict';
+
 (function () {
   var menuBtnRef = document.querySelector('[data-menu-button]');
   var mobileMenuRef = document.querySelector('[data-menu]');
   var logoRef = document.querySelector('[data-logo]');
-  var bodyRef = document.querySelector('[data-body]');
-  var link1Ref = document.querySelector('[data-link_1]');
-  var link2Ref = document.querySelector('[data-link_2]');
-  var link3Ref = document.querySelector('[data-link_3]');
-  menuBtnRef.addEventListener('click', function () {
+  var bodyRef = document.querySelector('body');
+  var linksRef = document.querySelectorAll('.tablet-link');
+
+  var toggleMenu = function toggleMenu() {
     var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
     menuBtnRef.classList.toggle('is-open');
     menuBtnRef.setAttribute('aria-expanded', !expanded);
     mobileMenuRef.classList.toggle('is-open');
     logoRef.classList.toggle('is-open');
     bodyRef.classList.toggle('is-open');
-  });
-  link1Ref.addEventListener('click', function () {
-    var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-    menuBtnRef.classList.toggle('is-open');
-    menuBtnRef.setAttribute('aria-expanded', !expanded);
-    mobileMenuRef.classList.toggle('is-open');
-    logoRef.classList.toggle('is-open');
-    bodyRef.classList.toggle('is-open');
-  });
-  link2Ref.addEventListener('click', function () {
-    var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-    menuBtnRef.classList.toggle('is-open');
-    menuBtnRef.setAttribute('aria-expanded', !expanded);
-    mobileMenuRef.classList.toggle('is-open');
-    logoRef.classList.toggle('is-open');
-    bodyRef.classList.toggle('is-open');
-  });
-  link3Ref.addEventListener('click', function () {
-    var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-    menuBtnRef.classList.toggle('is-open');
-    menuBtnRef.setAttribute('aria-expanded', !expanded);
-    mobileMenuRef.classList.toggle('is-open');
-    logoRef.classList.toggle('is-open');
-    bodyRef.classList.toggle('is-open');
+  };
+
+  menuBtnRef.addEventListener('click', toggleMenu);
+  linksRef.forEach(function (link) {
+    return link.addEventListener('click', toggleMenu);
   });
 })();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -187,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54496" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57681" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
