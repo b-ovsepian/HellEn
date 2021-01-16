@@ -175,30 +175,11 @@
     max-width: max-content;
   }
 }
-.testimonials-tablet .testimonials-link__img {
-  &:hover,
-  &:focus {
-    border: 2px solid $hover-color;
-  }
-}
 .container.testimonials {
   padding-left: 20px;
   padding-right: 20px;
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     padding-left: 0;
     padding-right: 0;
-  }
-}
-.testimonials-mobile {
-  display: none;
-  @media screen and(max-width: $tablet - 1px) {
-    display: flex;
-  }
-}
-.testimonials-tablet {
-  display: none;
-  @media screen and(min-width: $tablet) {
-    display: flex;
-    justify-content: center;
   }
 }
